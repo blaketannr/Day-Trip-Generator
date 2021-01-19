@@ -15,4 +15,36 @@
 // (5 points): As a developer, I want all of my functions to have a Single Responsibility. Remember, each
 // function should do just one thing!
 // Research:
-// How to generate a random number in JavaScrip
+// How to generate a random number in JavaScript
+
+ 
+let destinations = ['Madison', 'California', 'Kansas', 'New York'];
+let restaurants = ['Mcdonalds', 'Olive Garden', 'Burger King', 'Wendys'];
+let transportations = ['Bus', 'Car', 'Train', 'Plane'];
+let entertainments = ['Lasertag', 'Arcade', 'Brewery Tour', 'Movies'];
+
+alert("heres your trip itinerary");
+let sumNumber = Math.floor(Math.random() * 4);
+
+console.log("your destination will be "  +  destinations[sumNumber] + '');
+console.log("your restuarant will be " + restaurants[sumNumber] + '');
+console.log("your transportation will be "  + transportations[sumNumber] + '');
+console.log("your entertainment will be " + entertainments[sumNumber] + '');
+
+console.log(sumNumber);
+
+
+let userInput = prompt("do you like this trip?");
+ var tripSuccess = true;
+ var tripRestart = false;
+
+
+if (tripSuccess === true){
+    alert("great, have fun!");
+}
+else if (tripRestart === false)
+    alart("Nope try again!");
+    
+else if (tripSuccess === true){
+    alert("now this is where the fun begins!")
+}
