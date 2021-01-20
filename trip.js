@@ -16,7 +16,39 @@
 // function should do just one thing!
 // Research:
 // How to generate a random number in JavaScript
+// let userInput = "no";
+// while(userInput === "no"){
+ 
+// let destinations = ['Madison', 'California', 'Kansas', 'New York'];
+// let restaurants = ['Mcdonalds', 'Olive Garden', 'Burger King', 'Wendys'];
+// let transportations = ['Bus', 'Car', 'Train', 'Plane'];
+// let entertainments = ['Lasertag', 'Arcade', 'Brewery Tour', 'Movies'];
 
+// alert("heres your trip itinerary");
+// let sumNumber = Math.floor(Math.random() * 4);
+
+// console.log("your destination will be "  +  destinations[sumNumber] + '');
+// console.log("your restuarant will be " + restaurants[sumNumber] + '');
+// console.log("your transportation will be "  + transportations[sumNumber] + '');
+// console.log("your entertainment will be " + entertainments[sumNumber] + '');
+
+// console.log(sumNumber);
+
+
+// userInput = prompt("do you like this trip?");
+
+// if (userInput === "yes"){
+//     alert("great, have fun!");
+// }
+//  else if (userInput === "no"){
+//     alert("Nope, try again!");
+//  }
+
+// }
+
+
+let userInput = "no";
+while(userInput === "no"){
  
 let destinations = ['Madison', 'California', 'Kansas', 'New York'];
 let restaurants = ['Mcdonalds', 'Olive Garden', 'Burger King', 'Wendys'];
@@ -26,25 +58,24 @@ let entertainments = ['Lasertag', 'Arcade', 'Brewery Tour', 'Movies'];
 alert("heres your trip itinerary");
 let sumNumber = Math.floor(Math.random() * 4);
 
-console.log("your destination will be "  +  destinations[sumNumber] + '');
-console.log("your restuarant will be " + restaurants[sumNumber] + '');
-console.log("your transportation will be "  + transportations[sumNumber] + '');
-console.log("your entertainment will be " + entertainments[sumNumber] + '');
+function displayTrip(){
 
-console.log(sumNumber);
+alert("your destination will be "  +  destinations[sumNumber] + '');
+alert("your restuarant will be " + restaurants[sumNumber] + '');
+alert("your transportation will be "  + transportations[sumNumber] + '');
+alert("your entertainment will be " + entertainments[sumNumber] + '');
 
+console.log(displayTrip);
 
-let userInput = prompt("do you like this trip?");
- var tripSuccess = true;
- var tripRestart = false;
+}
 
+userInput = prompt("do you like this trip?");
 
-if (tripSuccess === true){
+if (userInput === "yes"){
     alert("great, have fun!");
 }
-else if (tripRestart === false)
-    alart("Nope try again!");
-    
-else if (tripSuccess === true){
-    alert("now this is where the fun begins!")
+ else if (userInput === "no"){
+    alert("Nope, try again!");
+ }
+
 }
