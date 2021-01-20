@@ -44,17 +44,17 @@
 //     alert("Nope, try again!");
 //  }
 // }
-let destinations = ['Madison', 'California', 'Kansas', 'New York'];
-let restaurants = ['Mcdonalds', 'Olive Garden', 'Burger King', 'Wendys'];
-let transportations = ['Bus', 'Car', 'Train', 'Plane'];
-let entertainments = ['Lasertag', 'Arcade', 'Brewery Tour', 'Movies'];
+let destinations = ['Chicago', 'Los Angeles', 'las Vegas', 'New York', 'Miami'];
+let restaurants = ['Steak House', 'Italian', 'Sushi', 'Gastropub', 'Thai'];
+let transportations = ['Bus', 'Car', 'Train', 'Plane', 'Carpool'];
+let entertainments = ['Lasertag', 'Arcade', 'Brewery Tour', 'Movies', 'Shopping'];
 
 let userInput = "no";
 while(userInput === "no"){
 userInput = prompt("Do you like this trip?");
 
 
-let sumNumber = Math.floor(Math.random() * 4);
+let sumNumber = Math.floor(Math.random() * 5);
 console.log(sumNumber);
 function tripOptions() {
 if (userInput === "yes"){
@@ -72,5 +72,6 @@ function displayTrip() {
     console.log("your transportation will be "  + transportations[sumNumber] + '');
     console.log("your entertainment will be " + entertainments[sumNumber] + '');
     console.log("your planned day trip will be " + myTrip[sumNumber] + '' );
+    console.lo(sumNumber);
 }
 }
